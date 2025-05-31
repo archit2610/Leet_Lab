@@ -143,7 +143,47 @@ exports.Prisma.PROBLEMScalarFieldEnum = {
   codeSnippet: 'codeSnippet',
   refrenceSolutions: 'refrenceSolutions',
   createdAt: 'createdAt',
-  updatedAr: 'updatedAr'
+  updatedAt: 'updatedAt'
+};
+
+exports.Prisma.SUBMISSIONScalarFieldEnum = {
+  id: 'id',
+  userId: 'userId',
+  problemId: 'problemId',
+  sourceCode: 'sourceCode',
+  laguage: 'laguage',
+  stdin: 'stdin',
+  stdout: 'stdout',
+  stderr: 'stderr',
+  compileOutput: 'compileOutput',
+  status: 'status',
+  memory: 'memory',
+  time: 'time',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+};
+
+exports.Prisma.TESTCASERESULTScalarFieldEnum = {
+  id: 'id',
+  submissionID: 'submissionID',
+  testCase: 'testCase',
+  passed: 'passed',
+  stdin: 'stdin',
+  stdout: 'stdout',
+  stderr: 'stderr',
+  expoectedOutput: 'expoectedOutput',
+  compileOutput: 'compileOutput',
+  status: 'status',
+  memory: 'memory',
+  time: 'time'
+};
+
+exports.Prisma.PROBLEMSOLVEDScalarFieldEnum = {
+  id: 'id',
+  userId: 'userId',
+  problemId: 'problemId',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
 };
 
 exports.Prisma.SortOrder = {
@@ -183,7 +223,10 @@ exports.Difficulty = exports.$Enums.Difficulty = {
 
 exports.Prisma.ModelName = {
   USER: 'USER',
-  PROBLEM: 'PROBLEM'
+  PROBLEM: 'PROBLEM',
+  SUBMISSION: 'SUBMISSION',
+  TESTCASERESULT: 'TESTCASERESULT',
+  PROBLEMSOLVED: 'PROBLEMSOLVED'
 };
 
 /**
